@@ -1,0 +1,26 @@
+<header>
+    <span class="head1" >Welcome To MERN Club</span>
+</header>
+
+<section>
+<div class="login-page">
+  <div class="form" >
+     
+    <h1>Login </h1>
+    <form class="login-form" action="/signin" method="post">
+      <input name="name" type="text" placeholder="username"/>
+      
+      <input name="password" type="password" placeholder="password"/>
+       {{#if error}} {{#if err_password}}
+      <p>Invalid Password</p>
+      {{/if}}
+      <p >Invalid Username or Password</p>
+      {{/if}}
+      <button type="submit">login</button>
+    
+
+    
+    </form>
+  </div>
+</div>
+</section>
